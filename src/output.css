@@ -633,10 +633,6 @@ video {
   grid-column: span 2 / span 2;
 }
 
-.col-auto {
-  grid-column: auto;
-}
-
 .-mx-2 {
   margin-left: -0.5rem;
   margin-right: -0.5rem;
@@ -908,19 +904,14 @@ video {
   border-color: rgb(31 41 55 / var(--tw-border-opacity, 1));
 }
 
-.border-gray-900 {
-  --tw-border-opacity: 1;
-  border-color: rgb(17 24 39 / var(--tw-border-opacity, 1));
-}
-
-.bg-\[\#028c96\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 140 150 / var(--tw-bg-opacity, 1));
-}
-
 .bg-\[\#2a395a\] {
   --tw-bg-opacity: 1;
   background-color: rgb(42 57 90 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#7b919f\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(123 145 159 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[\#FF7F00\] {
@@ -943,41 +934,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[acc\] {
-  background-color: acc;
-}
-
-.bg-\[accent\] {
-  background-color: accent;
-}
-
-.bg-\[d3d3d3d\] {
-  background-color: d3d3d3d;
-}
-
-.bg-\[d3d3d3\] {
-  background-color: d3d3d3;
-}
-
-.bg-\[\#d3d3d3\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(211 211 211 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\#878787\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(135 135 135 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\#7b919f\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(123 145 159 / var(--tw-bg-opacity, 1));
-}
-
 .bg-opacity-90 {
   --tw-bg-opacity: 0.9;
 }
@@ -988,6 +944,10 @@ video {
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-no-repeat {
@@ -1368,6 +1328,10 @@ video {
     top: 0px;
   }
 
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .md\:-mx-2 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -1443,6 +1407,10 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1494,6 +1462,11 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .lg\:mt-36 {
     margin-top: 9rem;
   }
